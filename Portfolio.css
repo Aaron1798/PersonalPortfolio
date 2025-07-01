@@ -1,0 +1,640 @@
+/* Base styles for desktop */
+
+/* 
+Using percentages for responsive design on larger screens:
+- Width set to 80% to adapt to parent element's size.
+- Padding with fixed top/bottom and percentage-based sides for flexibility.
+*/
+
+body {
+    background: linear-gradient(to right, #0b1926, #1c2833, #0d3c55, #0a2a36);
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    margin-top: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+h2{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header, nav, footer {
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+header {
+    padding: 175px; /* Adjust as needed */
+    margin: 0 10%; /* This adjusts the right and left margin, % adjusts to different screen sizes */
+    box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
+}
+
+header p{
+    margin: 0;
+}
+
+footer {
+    margin-top: auto;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+#navlist {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    justify-content: center; 
+    align-items: center;
+    padding: 12px;
+    margin: 0;
+}
+
+#navlist a {
+    background-color: black;
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 30px; 
+    flex: 1 1 auto; /* Allows flexible sizing */
+    text-align: center;
+}
+
+#navlist a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+
+/*________________________*/
+
+
+/*_____________________*/
+
+/*Table for Game Design Projects and Skills*/
+
+
+.table {
+    width: 98%; 
+    padding: 10px;
+    border-radius: 8px; 
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.table img{
+    flex: 1 1 auto;
+}
+
+table {
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2%;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+td img{
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    padding: 2% 20%;
+    cursor: pointer;
+    max-width: 100%;
+    display: inline-block; /*allows size to be set while unaffecting its position (centered)*/
+    margin: 10px auto;
+}
+
+#button1:hover, #button2:hover, #button3:hover, #button4:hover, #button5:hover, #button6:hover{
+    background-color: white;
+    color: black;
+}
+
+#button1, #button2, #button3, #button4, #button5, #button6, #button7, #button8 {
+    background-color: black;
+    color: white;
+}
+
+
+
+/*_____________________*/
+/*Size of pictures for Game Design Projects and Skills*/
+
+#GdPic1, #GdPic2, #GdPic3, #GdPic4, #GdPic5, #GdPic6{
+    height: auto;
+    max-width: 100%;
+    width: 100%;
+}
+
+#skillPic1, #skillPic2, #skillPic3, #skillPic4, #skillPic5, #skillPic6, #skillPic7, #skillPic8, #skillPic9, #skillPic10, #skillPic11, #skillPic12{
+    height: auto;
+    max-width: 100%;
+    width: 100%;
+}
+
+.Logo{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 250px;
+}
+
+#ProjectPic1, #ProjectPic2{
+    height: auto;
+    max-width: 100%;
+    width: 100%;
+}
+
+#ProjectPic2 {
+    margin-top: 5%;
+}
+
+#CertPic1, #CertPic2, #CertPic3 {
+    height: auto;
+    max-width: 100%;
+    width: 100%;
+}
+
+#Link1, #Link2, #Link3, #Link4 {
+    height: auto;
+    max-width: 100%;
+}
+
+.Links {
+        margin-top: 5%;
+}
+
+
+/*__________________________*/
+
+/*---------------------------------------------------------------------------------------*/
+
+/* Styles for mobile devices */
+
+/* 
+Using fixed pixels for precise control on smaller screens:
+- Fixed width to ensure the element fits well within the mobile viewport.
+- Fixed padding on all sides for consistent spacing.
+*/
+
+/* Media query for smaller screens (MOBILE VIEW or TABLET) */ 
+
+/* Screen size 1501px and up */
+
+@media screen and (min-width: 1501px){
+    
+
+    #GdPic1, #GdPic2, #GdPic3, #GdPic4, #GdPic5, #GdPic6{
+        max-width: 380px;
+        border-radius: 25px;
+    }
+
+    #skillPic1, #skillPic2, #skillPic3, #skillPic4, #skillPic5, #skillPic6, #skillPic7, #skillPic8, #skillPic9, #skillPic10, #skillPic11, #skillPic12{
+        max-width: 120px;
+    }
+
+    #ProjectPic1, #ProjectPic2{
+        max-width: 1300px;
+        border-radius: 10px;
+    }
+
+    #CertPic1, #CertPic2, #CertPic3 {
+        max-width: 700px;
+        border-radius: 10px;
+    }
+
+    #button7, #button8 {
+    padding: 15px 40px; /* Example: increase padding */
+    font-size: 1.2em;   /* Example: increase font size */
+    width: auto;        /* Or set a specific width if needed */
+    }
+
+    #Link1, #Link2, #Link3, #Link4 {
+        max-width: 60px;
+    }
+
+
+    .Logo {
+        width: 500px; /* Adjust logo size for different screen sizes */
+    }
+
+    p {
+        width: 100%; /* Adjust width for better readability */
+        margin: 10px auto; /* Center the paragraph */
+        padding: 10px;
+        line-height: 1.6;
+        box-sizing: border-box;
+        font-size: medium;
+        padding-top: 30px;
+    }
+
+    h1{
+        padding-top: 50px;
+        padding: 25px;
+    }
+}
+
+
+/*---------------------------------------------------------------------------------------*/
+
+/* Screen size 1200px to 1500px */
+
+
+@media screen and (min-width: 1200px) and (max-width: 1500px){
+    #GdPic1, #GdPic2, #GdPic3, #GdPic4, #GdPic5, #GdPic6{
+        max-width: 340px;
+        border-radius: 20px;
+    }
+
+    #skillPic1, #skillPic2, #skillPic3, #skillPic4, #skillPic5, #skillPic6, #skillPic7, #skillPic8, #skillPic9, #skillPic10, #skillPic11, #skillPic12{
+        max-width: 100px;
+    }
+
+
+    #ProjectPic1, #ProjectPic2{
+        max-width: 1000px;
+        border-radius: 10px;
+    }
+
+    #CertPic1, #CertPic2, #CertPic3 {
+        max-width: 500px;
+        border-radius: 10px;
+    }
+
+    #button7, #button8 {
+    padding: 10px 30px; /* Example: increase padding */
+    font-size: 1.2em;   /* Example: increase font size */
+    width: auto;        /* Or set a specific width if needed */
+    }
+
+    #Link1, #Link2, #Link3, #Link4 {
+        max-width: 40px;
+    }
+
+
+    .Logo {
+        width: 60%; /* Adjust logo size for smaller screens */
+    }
+    body {
+        margin: 0;
+        width: 100%;
+        overflow-x: hidden; /* Prevent horizontal scroll */
+    }
+
+     p {
+        width: 100%; /* Adjust width for better readability */
+        margin: 10px auto; /* Center the paragraph */
+        padding: 10px;
+        line-height: 1.6;
+        box-sizing: border-box;
+        font-size: small;
+        padding-top: 30px;
+    }
+
+    #navlist {
+        width: 100%; /* Ensure full width */
+        align-self: center;
+    }
+
+    #navlist a {
+        padding: 20px; /* Adjust padding for smaller screens */
+        text-align: center;
+        width: 100%; /* Ensure full width */
+        box-sizing: border-box; /* Include padding in total width */
+    }
+
+    h1{
+        padding-top: 50px;
+        padding: 25px;
+    }
+}
+
+/*---------------------------------------------------------------------------------------*/
+
+/* Screen size 769px to 1199px */ /*ADJUST THIS SIZE*/
+
+@media screen and (min-width: 769px) and (max-width: 1199px){
+    #GdPic1, #GdPic2, #GdPic3, #GdPic4, #GdPic5, #GdPic6{
+        max-width: 160px;
+        border-radius: 20px;
+    }
+
+    #skillPic1, #skillPic2, #skillPic3, #skillPic4, #skillPic5, #skillPic6, #skillPic7, #skillPic8, #skillPic9, #skillPic10, #skillPic11, #skillPic12{
+        max-width: 80px;
+    }
+
+
+        #ProjectPic1, #ProjectPic2{
+        max-width: 800px;
+        border-radius: 10px;
+    }
+
+    #CertPic1, #CertPic2, #CertPic3 {
+        max-width: 300px;
+        border-radius: 10px;
+    }
+
+    #button7, #button8 {
+    padding: 8px 25px; /* Example: increase padding */
+    font-size: 1.2em;   /* Example: increase font size */
+    width: auto;        /* Or set a specific width if needed */
+    }
+
+    #Link1, #Link2, #Link3, #Link4 {
+        max-width: 30px;
+    }
+
+
+    body {
+        margin: 0;
+        width: 100%;
+        overflow-x: hidden; /* Prevent horizontal scroll */
+    }
+
+     p {
+        width: 100%; /* Adjust width for better readability */
+        margin: 10px auto; /* Center the paragraph */
+        padding: 10px;
+        line-height: 1.6;
+        box-sizing: border-box;
+        font-size: small;
+        padding-top: 30px;
+    }
+
+    #navlist {
+        width: 100%; /* Ensure full width */
+        align-self: center;
+    }
+
+    #navlist a {
+        padding: 20px; /* Adjust padding for smaller screens */
+        text-align: center;
+        width: 100%; /* Ensure full width */
+        box-sizing: border-box; /* Include padding in total width */
+    }
+
+    header, nav, footer {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    button {
+        width: 100%; /* Adjust width for better fit */
+        margin: 10px auto; /* Center elements */
+        padding: 5px; /*adjust for smaller screens*/
+        display: block;
+        box-sizing: border-box; /* Include padding in total width */
+    }
+
+    .Logo {
+        width: 50%; /* Adjust logo size for smaller screens */
+    }
+
+    h1{
+        padding-top: 50px;
+        padding: 25px;
+    }
+    
+    h2 {
+        font-size: large; /* Adjust font size for smaller screens */
+    }
+
+    th{
+        font-size: small;
+    }
+
+    /* Ensure table fits within the viewport */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed; /* Prevent cells from expanding beyond table width */
+    }
+}
+
+/*---------------------------------------------------------------------------------------*/
+
+/* Screen size 601px to 768px */
+
+@media screen and (min-width: 601px) and (max-width: 768px){
+    #GdPic1, #GdPic2, #GdPic3, #GdPic4, #GdPic5, #GdPic6{
+        max-width: 140px;
+        border-radius: 18px;
+    }
+
+    #skillPic1, #skillPic2, #skillPic3, #skillPic4, #skillPic5, #skillPic6, #skillPic7, #skillPic8, #skillPic9, #skillPic10, #skillPic11, #skillPic12{
+        max-width: 60px;
+    }
+
+
+    #ProjectPic1, #ProjectPic2{
+        max-width: 600px;
+        border-radius: 10px;
+    }
+
+    #CertPic1, #CertPic2, #CertPic3 {
+        max-width: 200px;
+        border-radius: 10px;
+    }
+
+    #button7, #button8 {
+    padding: 6px 20px; /* Example: increase padding */
+    font-size: 1.2em;   /* Example: increase font size */
+    width: auto;        /* Or set a specific width if needed */
+    }
+
+    #Link1, #Link2, #Link3, #Link4 {
+        max-width: 25px;
+    }
+
+
+
+    body {
+        margin: 0;
+        width: 100%;
+        overflow-x: hidden; /* Prevent horizontal scroll */
+    }
+
+     p {
+        width: 100%; /* Adjust width for better readability */
+        margin: 10px auto; /* Center the paragraph */
+        padding: 10px;
+        line-height: 1.6;
+        box-sizing: border-box;
+        font-size: small;
+        padding-top: 30px;
+    }
+
+    #navlist {
+        width: 100%; /* Ensure full width */
+        align-self: center;
+    }
+
+    #navlist a {
+        padding: 20px; /* Adjust padding for smaller screens */
+        text-align: center;
+        width: 100%; /* Ensure full width */
+        box-sizing: border-box; /* Include padding in total width */
+    }
+
+    header, nav, footer {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    button {
+        width: 100%; /* Adjust width for better fit */
+        margin: 10px auto; /* Center elements */
+        padding: 5px; /*adjust for smaller screens*/
+        display: block;
+        box-sizing: border-box; /* Include padding in total width */
+    }
+
+    .Logo {
+        width: 50%; /* Adjust logo size for smaller screens */
+    }
+
+    h1{
+        padding-top: 50px;
+        padding: 25px;
+    }
+
+    h2 {
+        font-size: large; /* Adjust font size for smaller screens */
+    }
+
+    th{
+        font-size: small;
+    }
+
+    /* Ensure table fits within the viewport */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed; /* Prevent cells from expanding beyond table width */
+    }
+
+}
+
+/*---------------------------------------------------------------------------------------*/
+
+/* Screen size 600px or smaller */
+@media screen and (max-width: 600px) {
+    body {
+        margin: 0;
+        width: 100%;
+        overflow-x: hidden; /* Prevent horizontal scroll */
+    }
+
+     p {
+        width: 100%; /* Adjust width for better readability */
+        margin: 10px auto; /* Center the paragraph */
+        padding: 10px;
+        line-height: 1.6;
+        box-sizing: border-box;
+        font-size: small;
+        padding-top: 30px;
+    }
+
+    #navlist {
+        width: 100%; /* Ensure full width */
+        align-self: center;
+    }
+
+    #navlist a {
+        padding: 10px; /* Adjust padding for smaller screens */
+        text-align: center;
+        width: 100%; /* Ensure full width */
+        box-sizing: border-box; /* Include padding in total width */
+    }
+
+    header, nav, footer {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    button {
+        width: 100%; /* Adjust width for better fit */
+        margin: 10px auto; /* Center elements */
+        padding: 5px; /*adjust for smaller screens*/
+        display: block;
+        box-sizing: border-box; /* Include padding in total width */
+    }
+
+    .Logo {
+        width: 50%; /* Adjust logo size for smaller screens */
+    }
+
+    h1{
+        padding-top: 50px;
+        padding: 25px;
+    }
+
+    h2 {
+        font-size: large; /* Adjust font size for smaller screens */
+        padding: 20px;
+        padding-top: 100px;
+    }
+
+    th{
+        font-size: small;
+    }
+
+    #GdPic1, #GdPic2, #GdPic3, #GdPic4, #GdPic5, #GdPic6{
+        height: auto;
+        max-width: 120px; /*Keeps images from getting cut-off*/
+        border-radius: 15px;
+    }
+
+    #skillPic1, #skillPic2, #skillPic3, #skillPic4, #skillPic5, #skillPic6, #skillPic7, #skillPic8, #skillPic9, #skillPic10, #skillPic11, #skillPic12{
+        height: auto;
+        max-width: 45px; /*Keeps images from getting cut-off*/
+    }
+
+     /* Ensure table fits within the viewport */
+     table {
+        width: 99%;
+        border-collapse: collapse;
+        table-layout: fixed; /* Prevent cells from expanding beyond table width */
+    }
+
+
+    #ProjectPic1, #ProjectPic2{
+        max-width: 400px;
+        border-radius: 10px;
+    }
+
+    #CertPic1, #CertPic2, #CertPic3 {
+        max-width: 150px;
+        border-radius: 10px;
+    }
+
+    #button7, #button8 {
+    padding: 5px 15px; /* Example: increase padding */
+    font-size: 1.2em;   /* Example: increase font size */
+    width: auto;        /* Or set a specific width if needed */
+    }
+
+    #Link1, #Link2, #Link3, #Link4 {
+        max-width: 20px;
+    }
+    
+}
