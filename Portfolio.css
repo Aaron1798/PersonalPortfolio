@@ -26,6 +26,10 @@ h2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+h3{
+    font-size: 1.5rem;
+}
+
 header, nav, footer {
     color: #fff;
     text-align: center;
@@ -132,7 +136,7 @@ button {
     color: black;
 }
 
-#button1, #button2, #button3, #button4, #button5, #button6, #button7, #button8 {
+#button1, #button2, #button3, #button4, #button5, #button6, #button7, #button8, #button9 {
     background-color: black;
     color: white;
 }
@@ -161,13 +165,13 @@ button {
     border-radius: 250px;
 }
 
-#ProjectPic1, #ProjectPic2{
+#ProjectPic1, #ProjectPic2, #ProjectPic3{
     height: auto;
     max-width: 100%;
     width: 100%;
 }
 
-#ProjectPic2 {
+#ProjectPic2, #ProjectPic1 {
     margin-top: 5%;
 }
 
@@ -215,7 +219,7 @@ Using fixed pixels for precise control on smaller screens:
         max-width: 120px;
     }
 
-    #ProjectPic1, #ProjectPic2{
+    #ProjectPic1, #ProjectPic2, #ProjectPic3{
         max-width: 1300px;
         border-radius: 10px;
     }
@@ -225,7 +229,7 @@ Using fixed pixels for precise control on smaller screens:
         border-radius: 10px;
     }
 
-    #button7, #button8 {
+    #button7, #button8, #button9 {
     padding: 15px 40px; /* Example: increase padding */
     font-size: 1.2em;   /* Example: increase font size */
     width: auto;        /* Or set a specific width if needed */
@@ -254,6 +258,10 @@ Using fixed pixels for precise control on smaller screens:
         padding-top: 50px;
         padding: 25px;
     }
+
+    h3{
+    font-size: 1rem;
+    }
 }
 
 
@@ -273,7 +281,7 @@ Using fixed pixels for precise control on smaller screens:
     }
 
 
-    #ProjectPic1, #ProjectPic2{
+    #ProjectPic1, #ProjectPic2, #ProjectPic3{
         max-width: 1000px;
         border-radius: 10px;
     }
@@ -283,7 +291,7 @@ Using fixed pixels for precise control on smaller screens:
         border-radius: 10px;
     }
 
-    #button7, #button8 {
+    #button7, #button8, #button9 {
     padding: 10px 30px; /* Example: increase padding */
     font-size: 1.2em;   /* Example: increase font size */
     width: auto;        /* Or set a specific width if needed */
@@ -329,6 +337,10 @@ Using fixed pixels for precise control on smaller screens:
         padding-top: 50px;
         padding: 25px;
     }
+
+    h3{
+    font-size: .8rem;
+    }
 }
 
 /*---------------------------------------------------------------------------------------*/
@@ -346,7 +358,7 @@ Using fixed pixels for precise control on smaller screens:
     }
 
 
-        #ProjectPic1, #ProjectPic2{
+        #ProjectPic1, #ProjectPic2, #ProjectPic3{
         max-width: 800px;
         border-radius: 10px;
     }
@@ -356,7 +368,7 @@ Using fixed pixels for precise control on smaller screens:
         border-radius: 10px;
     }
 
-    #button7, #button8 {
+    #button7, #button8, #button9 {
     padding: 8px 25px; /* Example: increase padding */
     font-size: 1.2em;   /* Example: increase font size */
     width: auto;        /* Or set a specific width if needed */
@@ -430,6 +442,10 @@ Using fixed pixels for precise control on smaller screens:
         border-collapse: collapse;
         table-layout: fixed; /* Prevent cells from expanding beyond table width */
     }
+
+    h3{
+    font-size: .7rem;
+    }
 }
 
 /*---------------------------------------------------------------------------------------*/
@@ -447,7 +463,7 @@ Using fixed pixels for precise control on smaller screens:
     }
 
 
-    #ProjectPic1, #ProjectPic2{
+    #ProjectPic1, #ProjectPic2, #ProjectPic3{
         max-width: 600px;
         border-radius: 10px;
     }
@@ -457,7 +473,7 @@ Using fixed pixels for precise control on smaller screens:
         border-radius: 10px;
     }
 
-    #button7, #button8 {
+    #button7, #button8, #button9 {
     padding: 6px 20px; /* Example: increase padding */
     font-size: 1.2em;   /* Example: increase font size */
     width: auto;        /* Or set a specific width if needed */
@@ -531,6 +547,10 @@ Using fixed pixels for precise control on smaller screens:
         width: 100%;
         border-collapse: collapse;
         table-layout: fixed; /* Prevent cells from expanding beyond table width */
+    }
+
+    h3{
+    font-size: .65rem;
     }
 
 }
@@ -617,7 +637,7 @@ Using fixed pixels for precise control on smaller screens:
     }
 
 
-    #ProjectPic1, #ProjectPic2{
+    #ProjectPic1, #ProjectPic2, #ProjectPic3{
         max-width: 400px;
         border-radius: 10px;
     }
@@ -627,7 +647,7 @@ Using fixed pixels for precise control on smaller screens:
         border-radius: 10px;
     }
 
-    #button7, #button8 {
+    #button7, #button8, #button9 {
     padding: 5px 15px; /* Example: increase padding */
     font-size: 1.2em;   /* Example: increase font size */
     width: auto;        /* Or set a specific width if needed */
@@ -635,6 +655,10 @@ Using fixed pixels for precise control on smaller screens:
 
     #Link1, #Link2, #Link3, #Link4 {
         max-width: 20px;
+    }
+
+    h3{
+    font-size: .6rem;
     }
     
 }
